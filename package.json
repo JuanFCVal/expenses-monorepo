@@ -1,0 +1,21 @@
+{
+  "name": "expenses-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "node repos/expenses/dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "repos/*"
+  ],
+  "dependencies": {
+    "turbo": "^1.13.3"
+  }
+}
